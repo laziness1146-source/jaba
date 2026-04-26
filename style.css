@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px 0;
+    background-color: #fff; /* Фон страницы за газетой */
+    font-family: 'Roboto Condensed', sans-serif; /* Замена StratosSkyeng для отображения */
+}
+
+.main {
+    font-family: 'StratosSkyeng', 'Roboto Condensed', sans-serif;
+    background-color: #D6D3CA; /* Цвет бумаги */
+    width: 1400px;
+    padding: 50px 53px; /* Отступы внутри газеты */
+    margin: 0 auto; /* Центрирование газеты */
+    box-shadow: 1px 1px 5px 1px grey;
+}
+
+/* --- HEADER --- */
+.header {
+    margin-bottom: 42px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    text-align: right; /* Дата справа */
+    padding: 20px 0;
+}
+
+.header-date {
+    text-align: right;
+    font-size: 24px; /* Уменьшил, так как 86px слишком много для даты */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: 80px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center; /* Заголовок по центру, как на фото */
+    line-height: 1;
+}
+
+/* --- CONTENT ARTICLE --- */
+.content {
+    padding: 30px;
+    border: 4px solid black;
+    margin-bottom: 37px;
+    background-color: #e3dfd6; /* Чуть светлее фона */
+}
+
+.content-title {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+.table-row {
+    vertical-align: top;
+}
+
+.table-data {
+    padding-right: 27px;
+    width: 60%;
+}
+
+.table-data-img {
+    width: 40%;
+    text-align: center;
+    padding-right: 0;
+}
+
+.table-data-text,
+.table-data-text-last {
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: justify; /* Выравнивание по ширине */
+    margin-bottom: 20px;
+}
+
+.table-data-text {
+    margin-bottom: 30px;
+}
+
+.table-data-text-last {
+    margin-bottom: 0;
+}
+
+img {
+    width: 483px;
+    height: 550px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+/* --- FOOTER / ADS --- */
+.advert-title {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+    padding: 15px 0;
+}
+
+.adverts {
+    list-style-type: none;
+    margin-top: 20px;
+    /* Убираем отступы между inline-block элементами */
+    font-size: 0; 
+}
+
+.advert-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 347px;
+    margin-right: 22px;
+    font-size: 20px; /* Возвращаем размер шрифта */
+    /* УБРАЛ: background-color: #fff; */
+    /* УБРАЛ: border: 2px solid black; */
+    padding: 0; /* Убрал внутренние отступы */
+}
+
+.advert-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    /* УБРАЛ: border-bottom: 1px solid black; */
+    /* УБРАЛ: padding-bottom: 10px; */
+}
+
+.advert-item p {
+    margin-bottom: 10px;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.advert-item:last-of-type {
+    margin-right: 0;
+}
